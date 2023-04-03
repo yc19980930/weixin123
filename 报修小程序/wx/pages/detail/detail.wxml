@@ -1,0 +1,36 @@
+<view class='apply-table'>
+	<view class='apply-title'>申报表</view>
+	<view class="apply-item">
+		<view class="apply-item-title">申报人：</view>
+		<view class="item-content">{{data.name}}</view>
+	</view>
+	<view class="apply-item">
+		<view class="apply-item-title">维修地址：</view>
+		<view class="item-content">{{data.address}}</view>
+	</view>
+	<view class="apply-item">
+		<view class="apply-item-title">联系电话：</view>
+		<view class="item-content">{{data.phone}}</view>
+	</view>
+	<view class="apply-item">
+		<view class="apply-item-title">维修设备：</view>
+		<view class="item-content">{{data.equipmentName}}</view>
+	</view>
+	<view class="apply-item">
+		<view class="apply-item-title">申报描述：</view>
+		<view class="item-content">{{data.recordDesc}}</view>
+	</view>
+	<view class="apply-item">
+		<view class="apply-item-title">申报级别：</view>
+		<view class="item-content">{{data.level=='0'?"普通维修":"紧急维修"}}</view>
+	</view>
+	<view class="apply-item">
+		<view class="apply-item-title">申报状态：</view>
+		<view class="item-content">{{data.status=='0' ?"未处理":"已处理"}}</view>
+	</view>
+	<view class="apply-item">
+		<view class="apply-item-title">申报日期：</view>
+		<view class="item-content">{{data.createTime}}</view>
+	</view>
+	<image src='/images/bi.png' class="header-icon"></image>
+</view>
